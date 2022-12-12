@@ -1,0 +1,61 @@
+ .u-section-1 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("images/pexels-photo-10514116.jpeg");
+  background-position: 50% 50%;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 703px;
+}
+
+.u-section-1 .u-form-1 {
+  height: 382px;
+  width: 533px;
+  background-image: none;
+  margin: 60px auto 0;
+}
+
+.u-section-1 .u-input-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-input-2 {
+  background-image: none;
+}
+
+.u-section-1 .u-btn-1 {
+  width: 100%;
+  background-image: none;
+  border-style: none;
+  padding: 10px 31px 10px 29px;
+}
+
+.u-section-1 .u-btn-2 {
+  align-self: center;
+  border-style: none;
+  margin: 30px auto 0;
+  padding: 0;
+}
+
+.u-section-1 .u-btn-3 {
+  border-style: none;
+  margin: 20px auto 60px;
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 643px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 1084px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-form-1 {
+    width: 340px;
+  }
+}

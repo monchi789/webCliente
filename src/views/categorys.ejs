@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-        <title>Bienvenidos artistas</title>
+        <title>SHABLAGOO</title>
         <meta name="keywords" content="">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -46,11 +46,11 @@
                         <ul class="menu-area-main">
                           <li> <a href="inicio">Inicio</a> </li>
                       
-                          <li class="active"> <a href="about">Sobre nosotros</a> </li>
+                          <li> <a href="about">Sobre nosotros</a> </li>
 
                           <li> <a href="events">Eventos </a> </li>
 
-                          <li > <a href="eventPlanners">Planeadores de Eventos </a> </li>
+                          <li class="active"> <a href="eventPlanners">Planeadores de Eventos </a> </li>
                           
                           <li> <a href="categorys">Categorias</a> </li>
           
@@ -68,42 +68,37 @@
          <!-- end header inner -->
     
          <!-- end header -->
-
-        </header>
-
-        <div class="backgro_mh">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="heding">
-                   <h2>Shablagoo</h2>
+         <div class="backgro_mh">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="heding">
+                     <h2>Categorias Artisticas</h2>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- about  -->
-<div id="about" class="about">
-    <div class="container">
-      <div class="row display_boxflex">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-          <div class="about-box">
-            <h2>Conoce a Shablagoo</h2>
-            <p>Shablagoo es una iniciativa cusqueña que busca dar una mejor difusión a los eventos artísticos y de los locales en donde se llevan a cabo, para que de esta forma los artistas emergentes de nuestra ciudad puedan tener mayor alcance y llegar a un público más amplio. Esperamos que con esta herramienta podamos ayudar a mas personas amantes del arte.</p>
-          </div>
-        </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-          <div class="about-box">
-            <figure><img src="/images/about.png" alt="#" /></figure>
-          </div>
-        </div>
-      </div>
-  
-    </div>
-  </div>
 
-  <!--  footer -->
-  <footr>
+          <% category.forEach((categorys) => { %>
+            <div id="upcoming" class="upcoming">
+              <div class="container-fluid padding_left3">
+                <div class="row display_boxflex">
+                  <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                   <div class="box_text">
+                      <div class="titlepage">
+                        <h2> <%= categorys.name %></h2>
+                      </div>
+                      <h1><%= categorys.description %></h1>
+                    </div>
+                  </div> 
+                    </div>
+                </div>
+      
+          <% }) %>
+            
+<!--  footer -->
+<footr>
     <div class="footer ">
       <div class="container">
         <div class="row">

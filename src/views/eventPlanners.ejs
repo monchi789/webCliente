@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <title>SHABLAGOO</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+    
+        <link rel="stylesheet" href="/css/style.css">
+    
+        <link rel="stylesheet" href="/css/responsive.css">  
+    
+        <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+    
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    </head>
+<body class="main-layout contineer_page">
+    <header>
+        <!-- header inner -->
+        <div class="header-top">
+          <div class="header">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col logo_section">
+                  <div class="full">
+                    <div class="center-desk">
+                      <div class="logo">
+                        <a href="inicio"><img src="/images/logo.png" alt="#" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-9">
+                  
+                   <div class="menu-area">
+                    <div class="limit-box">
+                      <nav class="main-menu ">
+                        <ul class="menu-area-main">
+                          <li> <a href="inicio">Inicio</a> </li>
+                      
+                          <li> <a href="about">Sobre nosotros</a> </li>
+
+                          <li> <a href="events">Eventos </a> </li>
+
+                          <li class="active"> <a href="eventPlanners">Planeadores de Eventos </a> </li>
+                          
+                          <li> <a href="categorys">Categorias</a> </li>
+          
+                          <li  > <a  class="last_manu" href="#"><img src="/images/search_icon.png" alt="#" /></a> </li>
+                          
+                         </ul>
+                       </nav>
+                    
+                   </div> 
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <!-- end header inner -->
+    
+         <!-- end header -->
+         
+    </header>
+    <div class="backgro_mh">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="heding">
+                 <h2>LOCALES ORGANIZADORES DE EVENTOS</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <% eventPlanner.forEach((eventPlanners) => { %>
+      <div id="upcoming" class="upcoming">
+        <div class="container-fluid padding_left3">
+          <div class="row display_boxflex">
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+             <div class="box_text">
+                <div class="titlepage">
+                  <h2> Local <%= eventPlanners.id %>: <%= eventPlanners.name %></h2>
+                </div>
+                <h1>Ubicacion: <%= eventPlanners.location %> </h1>
+                <h1> Ruc: <%= eventPlanners.ruc %></h1>
+              </div>
+            </div> 
+          
+            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 border_right">
+               <div class="upcomimg">
+                 <figure><img src="<%= eventPlanners.photo %>" alt="<%= eventPlanners.name %>"/></figure>
+              </div>
+                </div>
+                </div>
+          </div>
+
+    <% }) %>
+
+    <footr>
+        <div class="footer ">
+          <div class="container">
+            <div class="row">
+              
+              <div class="col-md-12 border_top">
+                <form class="news">
+                 <h3>Recibe Noticias de los eventos!</h3>
+                  <input class="newslatter" placeholder="Ingresa tu correo" type="text" name=" ENTER YOUR MAIL">
+                  <button class="submit">Subscriberse</button>
+                </form>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="address">
+                      <ul class="loca">
+                        <li>
+                          <a href="#"><img src="/icon/loc.png" alt="#" /></a>Locales
+                     
+                          <li>
+                            
+                              <a href="#"><img src="/icon/call.png" alt="#" /></a>+51995420075 </li>
+                            <li>
+                              <a href="#"><img src="/icon/email.png" alt="#" /></a>shablagoo@gmail.com </li>
+                            </ul>
+                           
+  
+                          </div>
+                        </div>
+                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                             <ul class="social_link">
+                              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                              <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            </ul>
+                         </div>
+                      </div>
+                    </div>
+  
+                  </div>
+  
+                </div>
+                 <div class="container">
+                <div class="copyright">
+                 
+                    <p>Shablagoo - Todos los derechos reservados</p>
+                  </div>
+                </div>
+              </div>
+            </footr>
+            <!-- end footer -->
+            <!-- Javascript files-->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="js/jquery-3.0.0.min.js"></script>
+            <script src="js/plugin.js"></script>
+            <!-- sidebar -->
+            <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script src="js/custom.js"></script>
+            <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      
+</body>
+</html>
